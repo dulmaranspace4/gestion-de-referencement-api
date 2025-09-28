@@ -10,6 +10,6 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "author": "Votre Nom",
+  "author": "Votre Nouveau Nom",
   "license": "MIT"
 }
