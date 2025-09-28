@@ -4,25 +4,25 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Endpoint pour analyser un site web
+// Endpoint to analyze a website
 app.get('/api/v1/analyse', (req, res) => {
-    // Logique d'analyse SEO
-    res.json({ message: 'Analyse de site web effectuée.' });
+    // SEO analysis logic
+    res.json({ message: 'Website analysis completed.' });
 });
 
-// Endpoint pour obtenir des recommandations
+// Endpoint to get recommendations
 app.post('/api/v1/recommandations', (req, res) => {
     const { siteData } = req.body;
-    // Logique pour générer des recommandations
-    res.json({ recommendations: 'Recommandations personnalisées.' });
+    // Logic to generate recommendations
+    res.json({ recommendations: 'Personalized recommendations.' });
 });
 
-// Endpoint pour suivre les classements
+// Endpoint to track rankings
 app.get('/api/v1/classements', (req, res) => {
-    // Logique pour suivre les classements
-    res.json({ rankings: 'Classements des sites web.' });
+    // Logic to track rankings
+    res.json({ rankings: 'Website rankings.' });
 });
 
 app.listen(PORT, () => {
-    console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
