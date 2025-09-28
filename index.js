@@ -11,7 +11,7 @@ app.get('/api/v1/analyse', (req, res) => {
 });
 
 // Endpoint to get recommendations
-app.post('/api/v1/recommandations', (req, res) => {
+app.post('/api/v1/recommendations', (req, res) => {
     const { siteData } = req.body;
     // Logic to generate recommendations
     res.json({ recommendations: 'Personalized recommendations.' });
