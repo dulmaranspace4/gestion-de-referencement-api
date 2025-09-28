@@ -4,4 +4,4 @@ dist/
 .env
 .DS_Store
 *.log
-# coverage/  # Removed from ignore to include in repo
+coverage/
